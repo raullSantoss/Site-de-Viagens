@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(11, 11, 20);
+}
+
+header {
+    background: #111;
+    color: #ccc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav nav a:hover {
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.logo h1 a {
+    font-family: "Dancing Script", cursive;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.hero {
+    position: relative;
+    height:500px;
+
+    color: white;
+    background-image: url("/img/marcreation-M0wxmEHpBtE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.iframe-container iframe {
+    width: 50%;
+    height: 450px;
+    border: none;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+}
+
+p {
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+asside {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+asside h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+    color: #ddd;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.incrivel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contato {
+    display: flex;
+    width: fit-content;
+    margin: 20px auto; /* centraliza */
+    justify-content: center;
+    align-items: center;
+    background: #1e5eff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contato:hover {
+    background: #1a4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(30, 94, 255, 0.4);
+}
+
+iframe {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+iframe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 94, 255, 0.4); /* esse aqui adiciona uma sombra suave ao redor do iframe */
+}
+
+.legenda {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.legenda:hover {
+    color: #1e5eff;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .bloco {
+        flex-direction: column;
+        text-align: center;
+    }
+}

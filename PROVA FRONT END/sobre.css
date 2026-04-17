@@ -1,0 +1,64 @@
+
+
+header {
+    background: #111;
+    color: white;
+    position: sticky;       /* faz com que o header fique alternando entre o posicionamento relative e fixed */
+    top: 0;                /* gruda no topo quando a página rolar */
+    z-index: 1000;         /* faz com que que o header fique sobre outros elementos */
+    width: 100%;
+}
+
+.sobre-container {
+    background: rgb(11, 11, 20);
+    padding: 60px 20px;
+}
+
+.bloco {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bloco:nth-child(even) {
+    flex-direction: row-reverse; /*vai trocando o lado da imagem e do texto a cada bloco*/
+}
+
+.texto {
+    flex: 1;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #c2c2c2;
+}
+
+.texto h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.imagem {
+    flex: 1;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(167, 167, 167, 0.2);
+    transition: 0.3s ease;
+}
+
+.imagem img:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .bloco {
+        flex-direction: column;
+        text-align: center;
+    }
+}
